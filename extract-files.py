@@ -18,7 +18,7 @@ from extract_utils.main import (
 )
 
 namespace_imports = [
-    'device/samsung/sm7225-common',
+    'device/samsung/m23xq',
     'hardware/qcom-caf/common/libqti-perfd-client',
     'hardware/qcom-caf/sm8250',
     'hardware/qcom-caf/wlan',
@@ -42,6 +42,6 @@ module = ExtractUtilsModule(
 
 if __name__ == '__main__':
     utils = ExtractUtils.device_with_common(
-        module, 'sm7225-common', module.vendor
+        module, 'm23xq', module.vendor
     )
     utils.run()
