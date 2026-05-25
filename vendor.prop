@@ -182,6 +182,9 @@ drm.service.enabled=true
 ro.vendor.fingerprint.type=side
 ro.vendor.fingerprint.sensor_location=1080|825|200|local:4630947232161729153
 
+# FUSE passthrough
+persist.sys.fuse.passthrough.enable=true
+
 # Gatekeeper
 ro.hardware.gatekeeper=mdfpp
 
