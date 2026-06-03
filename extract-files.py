@@ -18,14 +18,7 @@ from extract_utils.main import (
 )
 
 namespace_imports = [
-    'device/samsung/m23xq',
-    'hardware/qcom-caf/common/libqti-perfd-client',
-    'hardware/qcom-caf/sm8250',
-    'hardware/qcom-caf/wlan',
-    'hardware/samsung',
-    'vendor/qcom/opensource/commonsys/display',
-    'vendor/qcom/opensource/commonsys-intf/display',
-    'vendor/qcom/opensource/dataservices',
+    'vendor/samsung/sm7225-common',
     'vendor/qcom/opensource/display',
 ]
 
