@@ -118,6 +118,7 @@ vendor/lib64/libbauthtzcommon.so
 vendor/lib64/libbauthserver.so
 vendor/lib64/libgf_in_system_lib.so
 vendor/lib64/libqfp_sensortest.so
+vendor/lib/libbauthserver.so
 
 # Graphics firmware
 vendor/firmware/a619_gmu.bin
