@@ -11,7 +11,6 @@ vendor/etc/audconf/OPEN/Speaker_cal.acdb
 vendor/etc/audconf/OPEN/workspaceFile.qwsp
 
 # Audio
-vendor/lib/hw/audio.primary.lito.so
 vendor/firmware/dax_param.bin
 vendor/firmware/tfa98xx.cnt
 vendor/etc/dolby/dax-default.xml
