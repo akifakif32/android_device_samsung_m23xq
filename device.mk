@@ -1,5 +1,5 @@
 #
-# SPDX-FileCopyrightText: The LineageOS Project
+# SPDX-FileCopyrightText: The Infinity-X Project
 # SPDX-License-Identifier: Apache-2.0
 #
 #
@@ -25,6 +25,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths.xml
 
 TARGET_VENDOR_PROP += $(COMMON_PATH)/vendor.prop
+TARGET_SYSTEM_PROP += $(COMMON_PATH)/system.prop
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \

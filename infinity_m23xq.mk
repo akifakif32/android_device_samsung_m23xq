@@ -13,8 +13,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 # Inherit from the common Open Source product configuration
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
-# Inherit some common Lineage stuff
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common Infinity-X stuff
+$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
 
 # Setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
@@ -28,8 +28,15 @@ TARGET_BOOTANIMATION_TEXTURE_CACHE := true
 TARGET_SCREEN_HEIGHT := 2408
 TARGET_SCREEN_WIDTH := 1080
 
+# Infinity-X Specific Flags
+INFINITY_BUILD_TYPE := OFFICIAL
+INFINITY_MAINTAINER := "akif"
+TARGET_BOOT_ANIMATION_RES := 1080
+WITH_GAPPS := true
+TARGET_SUPPORTS_BLUR := true
+
 ## Device identifier. This must come after all inclusions
-PRODUCT_NAME := lineage_m23xq
+PRODUCT_NAME := infinity_m23xq
 PRODUCT_DEVICE := m23xq
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SM-M236B
