@@ -24,8 +24,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths.xml
 
-TARGET_VENDOR_PROP += $(COMMON_PATH)/vendor.prop
-TARGET_SYSTEM_PROP += $(COMMON_PATH)/system.prop
+TARGET_VENDOR_PROP += $(LOCAL_PATH)/vendor.prop
+TARGET_SYSTEM_PROP += $(LOCAL_PATH)/system.prop
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
