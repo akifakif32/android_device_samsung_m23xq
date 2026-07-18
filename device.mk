@@ -3,6 +3,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 #
+LOCAL_PATH := device/samsung/m23xq
 
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
