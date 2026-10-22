@@ -1,0 +1,32 @@
+#
+# SPDX-FileCopyrightText: The LineageOS Project
+# SPDX-License-Identifier: Apache-2.0
+#
+
+DEVICE_PATH := device/samsung/sm7225-common
+
+# Partitions
+BOARD_BOOTIMAGE_PARTITION_SIZE := 100663296
+BOARD_CACHEIMAGE_PARTITION_SIZE := 629145600
+BOARD_DTBOIMG_PARTITION_SIZE := 8388608
+BOARD_RECOVERYIMAGE_PARTITION_SIZE := 81788928
+BOARD_SUPER_PARTITION_SIZE := 10385096704
+
+# Common
+include $(DEVICE_PATH)/BoardConfigCommon.mk
+
+# Display
+TARGET_SCREEN_DENSITY := 450
+
+# Kernel
+TARGET_KERNEL_CONFIG += vendor/samsung/m23xq.config
+
+# Platform
+BOARD_NAME := lito
+
+# OTA
+TARGET_OTA_ASSERT_DEVICE := m23xq
+TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/board-info.txt
+
+# Vintf
+DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/manifest.xml

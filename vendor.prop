@@ -157,6 +157,9 @@ vendor.gralloc.disable_ubwc=0
 # FUSE passthrough
 persist.sys.fuse.passthrough.enable=true
 
+# Fingerprint
+ro.vendor.fingerprint.type=side
+
 # Gatekeeper
 ro.hardware.gatekeeper=mdfpp
 
