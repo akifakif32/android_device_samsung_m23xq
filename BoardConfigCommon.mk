@@ -171,7 +171,7 @@ TARGET_RECOVERY_UPDATER_LIBS := librecovery_updater_samsung_sm7225
 TARGET_RELEASETOOLS_EXTENSIONS := $(COMMON_PATH)
 
 # Security patch
-VENDOR_SECURITY_PATCH := 2025-10-01
+VENDOR_SECURITY_PATCH := 2026-02-05
 
 # SePolicy
 include device/lineage/sepolicy/libion/sepolicy.mk
