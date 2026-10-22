@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-COMMON_PATH := device/samsung/sm8250-common
+COMMON_PATH := device/samsung/sm7225-common
 
 # A/B
 AB_OTA_UPDATER := false
@@ -167,7 +167,7 @@ TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/init/fstab.qcom
 TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
 
 # Releasetools
-TARGET_RECOVERY_UPDATER_LIBS := librecovery_updater_samsung_sm8250
+TARGET_RECOVERY_UPDATER_LIBS := librecovery_updater_samsung_sm7225
 TARGET_RELEASETOOLS_EXTENSIONS := $(COMMON_PATH)
 
 # Security patch
