@@ -174,14 +174,6 @@ PRODUCT_PACKAGES += \
     android.hardware.health-service.samsung \
     android.hardware.health-service.samsung-recovery
 
-# Input configs
-ifeq ($(TARGET_IS_TABLET),true)
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/idc/sec_e-pen.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/sec_e-pen.idc \
-    $(LOCAL_PATH)/configs/idc/Vendor_04e8_Product_a035.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/Vendor_04e8_Product_a035.idc \
-    $(LOCAL_PATH)/configs/keylayout/Vendor_04e8_Product_a035.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/Vendor_04e8_Product_a035.kl
-endif
-
 # ION
 $(call soong_config_set_bool,libion,legacy_impl,true)
 
