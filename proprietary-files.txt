@@ -1,4 +1,4 @@
-# Common proprietary files - from Samsung package version G780GXXSHEYJ1 (T), unless pinned
+# Common proprietary files - from Samsung package version M236BXXSEEZB2 (U), unless pinned
 
 # ADSP
 vendor/bin/adsprpcd
@@ -10,10 +10,8 @@ vendor/lib64/libsdsprpc.so
 
 # ADSP modules
 vendor/lib/rfsa/adsp/capi_v2_aptX_CLHDAD_Encoder.so
-vendor/lib/rfsa/adsp/libQ6MSFR_manager_skel.so
 vendor/lib/rfsa/adsp/libapps_mem_heap.so
 vendor/lib/rfsa/adsp/libcamera_nn_skel.so
-vendor/lib/rfsa/adsp/libcdsp_face_skel.so
 vendor/lib/rfsa/adsp/libcvpdsp_skel.so
 vendor/lib/rfsa/adsp/libdspCV_skel.so
 vendor/lib/rfsa/adsp/libdsp_streamer_binning.so
@@ -34,8 +32,8 @@ system_ext/etc/permissions/audiosphere.xml
 system_ext/framework/audiosphere.jar
 vendor/etc/dolby/dax-default.xml
 vendor/etc/audio_tuning_mixer.txt
-vendor/lib/hw/audio.primary.kona.so
-vendor/lib/hw/vendor.qti.hardware.audiohalext@1.0-impl.so
+vendor/lib/hw/audio.primary.lito.so
+vendor/lib/lib_SamsungRec_07010.so
 vendor/lib/lib_SoundAlive_SRC384_ver320.so
 vendor/lib/lib_soundaliveresampler.so
 vendor/lib/liba2dpoffload.so
@@ -59,7 +57,7 @@ vendor/lib/libhdmipassthru.so
 vendor/lib/libhfp.so
 vendor/lib/libprofileparamstorage.so
 vendor/lib/libqtigef.so
-vendor/lib/librecordalive.so;DUMMY_SHARED_LIB
+vendor/lib/librecordalive.so
 vendor/lib/libsamsungVoipResampler.so
 vendor/lib/libsecaudiocoreutils.so
 vendor/lib/libsecaudioinfo.so
@@ -92,8 +90,12 @@ vendor/lib/btaudio_offload_if.so
 vendor/lib/libbluetooth_audio_session_qti.so
 
 # Bluetooth (firmware)
-vendor/firmware/htbtfw20.tlv
-vendor/firmware/htnv20.bin
+vendor/firmware/apbtfw11.tlv
+vendor/firmware/apnv11.b71
+vendor/firmware/apnv11.bin
+vendor/firmware/crbtfw21.tlv
+vendor/firmware/crnv21.b71
+vendor/firmware/crnv21.bin
 
 # Configstore
 vendor/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service
@@ -110,23 +112,15 @@ vendor/lib64/libcdsprpc.so
 vendor/lib64/libsysmon_cdsp_skel.so
 
 # CVP
-vendor/lib64/libcvp2.so
-vendor/lib64/libcvp2_hfi.so
 vendor/lib64/libcvp_common.so
 vendor/lib64/libcvpcpuRev_skel.so
 vendor/lib64/vendor.qti.hardware.cvp@1.0.so
 
 # Camera
 vendor/lib64/hw/camera.qcom.so
-vendor/lib64/libDepthBokehVideo_interface.so
 vendor/lib64/libSNPE.so
-vendor/lib64/libarcsoft_aieffectpk_video.so
-vendor/lib64/libarcsoft_aieffectpk_video_bokeh.so
-vendor/lib64/libarcsoft_aieffectpk_video_plight.so
-vendor/lib64/libarcsoft_deflicker_native.so
 vendor/lib64/libarcsoft_multi_frame_video_hdr.so
 vendor/lib64/libarcsoft_object_tracking.so
-vendor/lib64/libarcsoft_superresolution_bokeh.so
 vendor/lib64/libbeautyshot.arcsoft.so
 vendor/lib64/libc++_shared.so
 vendor/lib64/libcamera_nn_stub.so
@@ -157,10 +151,7 @@ vendor/lib64/libmmcamera_faceproc.so
 vendor/lib64/libmmcamera_faceproc2.so
 vendor/lib64/libmpbase.so
 vendor/lib64/libmultiobject_tracker.so
-vendor/lib64/libmultiviewspin_interface.so
-vendor/lib64/libmultiviewzoom_interface.so
 vendor/lib64/libofflinelog.so
-vendor/lib64/libos.so
 vendor/lib64/libpadm.so
 vendor/lib64/libsavscmn.so
 vendor/lib64/libsensorlistener.so
@@ -179,23 +170,14 @@ vendor/lib64/libsnsapi.so
 vendor/lib64/libsnsdiaglog.so
 vendor/lib64/libstork_shared.so
 vendor/lib64/libswregistrationalgo.so
-vendor/lib64/libsynx.so
-vendor/lib64/libthreadutils.so
-vendor/lib64/libtswrappercommon.so
 vendor/lib64/libuniplugin.so
 vendor/lib64/libvdis_core.so
 vendor/lib64/libvideobeauty.arcsoft.so
 vendor/lib64/libvideobeauty_interface.so
-vendor/lib64/libvideotransitioneffect_roll.arcsoft.so
-vendor/lib64/libvideotransitioneffect_zoom.arcsoft.so
 vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so
 
 # Camera calibrations
 vendor/lib64/camera/f_dual_calibration.bin
-vendor/lib64/camera/fdconfigpreview.bin
-vendor/lib64/camera/fdconfigpreviewlite.bin
-vendor/lib64/camera/fdconfigvideo.bin
-vendor/lib64/camera/fdconfigvideolite.bin
 vendor/lib64/camera/t_tof_calibration.bin
 vendor/lib64/camera/uw_dual_calibration.bin
 vendor/lib64/camera/w_dual_calibration.bin
@@ -226,7 +208,6 @@ vendor/lib/libops.so
 vendor/lib/libqisl.so
 vendor/lib/librpmb.so
 vendor/lib/libsi.so
-vendor/lib/libspl.so
 vendor/lib/libssd.so
 vendor/lib/libtrustedapploader.so
 vendor/lib/libtzdrmgenprov.so
@@ -247,7 +228,6 @@ vendor/lib64/librpmb.so
 vendor/lib64/libsecureui.so
 vendor/lib64/libsecureui_svcsock.so
 vendor/lib64/libsi.so
-vendor/lib64/libspl.so
 vendor/lib64/libssd.so
 vendor/lib64/libtrustedapploader.so
 vendor/lib64/libtzdrmgenprov.so
@@ -287,10 +267,6 @@ vendor/lib64/vendor.display.color@1.4.so
 vendor/lib64/vendor.display.color@1.5.so
 vendor/lib64/vendor.display.postproc@1.0.so
 
-# ESE
-vendor/lib/vendor.qti.esepowermanager@1.0.so
-vendor/lib64/vendor.qti.esepowermanager@1.0.so
-
 # FASTCV
 vendor/lib/libfastcvdsp_stub.so
 vendor/lib/libfastcvopt.so
@@ -298,9 +274,6 @@ vendor/lib64/libfastcvdsp_stub.so
 vendor/lib64/libfastcvopt.so
 
 # Gatekeeper
-vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
-vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc
-vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so
 vendor/lib64/hw/gatekeeper.mdfpp.so
 
 # Graphics (Adreno)
@@ -338,18 +311,17 @@ vendor/lib64/libllvm-glnext.so
 vendor/lib64/libllvm-qcom.so
 
 # Graphics (Adreno firmware)
-vendor/firmware/a650_gmu.bin
-vendor/firmware/a650_sqe.fw
+vendor/firmware/a619_gmu.bin
+vendor/firmware/a620_zap.b00
+vendor/firmware/a620_zap.b01
+vendor/firmware/a620_zap.b02
+vendor/firmware/a620_zap.elf
+vendor/firmware/a620_zap.mdt
+vendor/firmware/a630_sqe.fw
 
 # Graphics (Vulkan)
 vendor/lib/hw/vulkan.adreno.so
 vendor/lib64/hw/vulkan.adreno.so
-
-# HotwordEnrollment
-product/priv-app/HotwordEnrollmentOKGoogleEx3HEXAGON/HotwordEnrollmentOKGoogleEx3HEXAGON.apk
-product/priv-app/HotwordEnrollmentXGoogleEx3HEXAGON/HotwordEnrollmentXGoogleEx3HEXAGON.apk
-system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml
-system_ext/framework/com.android.hotwordenrollment.common.util.jar
 
 # IPA (firmware)
 vendor/etc/init/ipa_fws.rc
@@ -360,29 +332,23 @@ vendor/firmware/ipa_fws.b03
 vendor/firmware/ipa_fws.b04
 vendor/firmware/ipa_fws.elf
 vendor/firmware/ipa_fws.mdt
-vendor/firmware/ipa_uc.b00
-vendor/firmware/ipa_uc.b01
-vendor/firmware/ipa_uc.b02
-vendor/firmware/ipa_uc.elf
-vendor/firmware/ipa_uc.mdt
+vendor/firmware/lagoon_ipa_fws.b00
+vendor/firmware/lagoon_ipa_fws.b01
+vendor/firmware/lagoon_ipa_fws.b02
+vendor/firmware/lagoon_ipa_fws.b03
+vendor/firmware/lagoon_ipa_fws.b04
+vendor/firmware/lagoon_ipa_fws.elf
+vendor/firmware/lagoon_ipa_fws.mdt
 
 # Keymaster
-vendor/bin/sec_nvm
 vendor/lib64/libkeymaster_helper.so
-vendor/lib64/libkeymasterdeviceutils.so
-vendor/lib64/libkeymasterutils.so
-vendor/lib64/libqtikeymaster4.so
 vendor/lib64/libskeymaster4device.so
-vendor/lib64/libspcom.so
 
 # Latency
-vendor/lib/vendor.qti.hardware.data.latency@1.0.so
 vendor/lib/vendor.qti.latency@2.0.so
-vendor/lib64/vendor.qti.hardware.data.latency@1.0.so
 vendor/lib64/vendor.qti.latency@2.0.so
 
 # Listen
-vendor/lib/hw/sound_trigger.primary.kona.so
 vendor/lib/libgcs-calwrapper.so
 vendor/lib/libgcs-ipc.so
 vendor/lib/libgcs-osal.so
@@ -503,16 +469,12 @@ vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so
 # RIL
 vendor/bin/adpl
 vendor/bin/ks
-vendor/bin/mdm_helper
-vendor/bin/mdm_helper_proxy
 vendor/bin/netmgrd
 vendor/bin/shsusrd
-vendor/bin/spdaemon
 vendor/bin/ssgtzd
 vendor/etc/data/dsi_config.xml
 vendor/etc/data/netmgr_config.xml
 vendor/etc/init/dataadpl.rc
-vendor/etc/init/init.spdaemon_wait_spunvm.rc
 vendor/etc/init/netmgrd.rc
 vendor/etc/init/shsusrd.rc
 vendor/etc/init/ssgtzd.rc
@@ -538,7 +500,6 @@ vendor/lib/libxml.so
 vendor/lib64/libconfigdb.so
 vendor/lib64/libdsi_netctrl.so
 vendor/lib64/libengmode_client.so
-vendor/lib64/libmdmimgload.so
 vendor/lib64/libpdmapper.so
 vendor/lib64/libpdnotifier.so
 vendor/lib64/libqcci_legacy.so
@@ -546,9 +507,6 @@ vendor/lib64/libqmi_csvt_srvc.so
 vendor/lib64/libsystem_health_mon.so
 vendor/lib64/libvkmanager_vendor.so
 vendor/lib64/libxml.so
-vendor/lib64/vendor.qti.hardware.radio.uim_remote_client@1.0.so
-vendor/lib64/vendor.qti.hardware.radio.uim_remote_client@1.1.so
-vendor/lib64/vendor.qti.hardware.radio.uim_remote_client@1.2.so
 
 # RIL-SEC - from dm2qxxx-user 14 UP1A.231005.007 S9160ZHS5CYA1 release-keys
 vendor/bin/hw/rild|b4e84db4ab705dd2689424d65ba06f74156e3ada
@@ -659,9 +617,10 @@ vendor/bin/argosd
 vendor/bin/cnss-daemon
 
 # WiFi (firmware)
-vendor/firmware/qca6390/amss20.bin
-vendor/firmware/qca6390/bdwlan.elf
-vendor/firmware/qca6390/bdwlan.elf1
-vendor/firmware/qca6390/bdwlan.elf2
-vendor/firmware/qca6390/m3.bin
-vendor/firmware/qca6390/regdb.bin
+vendor/firmware/wlan/qca_cld/WCNSS_qcom_cfg.ini
+vendor/firmware/wlan/qca_cld/bdwlan.bin
+vendor/firmware/wlan/qca_cld/bdwlan.bin1
+vendor/firmware/wlan/qca_cld/regdb.bin
+vendor/firmware/wlanmdsp.mbn
+vendor/etc/wifi/aoa_cldb_falcon.bin
+vendor/etc/wifi/aoa_cldb_swl14.bin
