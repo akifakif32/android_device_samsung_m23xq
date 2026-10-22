@@ -18,7 +18,7 @@ from extract_utils.main import (
 )
 
 namespace_imports = [
-    'device/samsung/sm8250-common',
+    'device/samsung/sm7225-common',
     'hardware/qcom-caf/sm8250',
     'hardware/qcom-caf/wlan',
     'hardware/samsung',
@@ -44,6 +44,12 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('libtinyxml2.so', 'libtinyxml2-v34.so'),
     ('vendor/lib64/libhypermotion_core.so', 'vendor/lib64/libsensorlistener.so', 'vendor/lib64/libvdis_core.so'): blob_fixup()
         .add_needed('libshim_sensorndkbridge.so'),
+    'vendor/lib64/unihal_main@2.15.so': blob_fixup()
+        .add_needed('libshim_sensorndkbridge.so')
+        .add_needed('libui_shim.so'),
+    'vendor/bin/hw/macloader': blob_fixup()
+        .binary_regex_replace(b'vendor.wifi.dualconcurrent.interface', b'vnedor.wiff.dualconcurreut.iuterface')
+        .binary_regex_replace(b'ro.vendor.wifi.sap.interface', b'ru.vnedor.wiff.sep.iuterface'),
     ('vendor/lib64/hw/gatekeeper.mdfpp.so', 'vendor/lib64/libkeymaster_helper.so', 'vendor/lib64/libskeymaster4device.so'): blob_fixup()
         .replace_needed('libcrypto.so', 'libcrypto-v33.so'),
     'vendor/lib64/libSecC2ComponentStore.so': blob_fixup()
@@ -54,7 +60,7 @@ blob_fixups: blob_fixups_user_type = {
 }  # fmt: skip
 
 module = ExtractUtilsModule(
-    'sm8250-common',
+    'sm7225-common',
     'samsung',
     blob_fixups=blob_fixups,
     lib_fixups=lib_fixups,
