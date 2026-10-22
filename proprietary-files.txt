@@ -176,6 +176,28 @@ vendor/lib64/libvideobeauty.arcsoft.so
 vendor/lib64/libvideobeauty_interface.so
 vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so
 
+# Camera (Samsung unihal)
+vendor/bin/loadalgo
+vendor/etc/init/camera.unihal.rc
+vendor/lib64/hw/camera.unihal.default.so
+vendor/lib64/libDLInterface.camera.samsung.so
+vendor/lib64/libDeviceInfoProvider.so
+vendor/lib64/libEventFinder.camera.samsung.so
+vendor/lib64/libHDRVerifier_v1.camera.samsung.so
+vendor/lib64/libHandGesture.camera.samsung.so
+vendor/lib64/libOpenCv.camera.samsung.so
+vendor/lib64/libSceneDetector_v1.camera.samsung.so
+vendor/lib64/libarcsoft_picportrait_video.so
+vendor/lib64/libexifa.camera.samsung.so
+vendor/lib64/libhand_interaction.uniplugin@1.0.so
+vendor/lib64/libscenedetector.uniplugin@1.0.so
+vendor/lib64/libsegmentationeffect.uniplugin@1.0.so
+vendor/lib64/libsocial_image_enhancement.uniplugin@1.0.so
+vendor/lib64/libvideobeauty.uniplugin@1.0.so
+vendor/lib64/unihal_cutils@2.15.so
+vendor/lib64/unihal_main@2.15.so
+vendor/lib64/unihal_uniplugin@1.0.so
+
 # Camera calibrations
 vendor/lib64/camera/f_dual_calibration.bin
 vendor/lib64/camera/t_tof_calibration.bin
