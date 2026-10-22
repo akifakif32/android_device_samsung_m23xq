@@ -355,7 +355,7 @@ PRODUCT_PACKAGES += \
 
 # Vibrator
 PRODUCT_PACKAGES += \
-    android.hardware.vibrator-service.samsung
+    android.hardware.vibrator-service.sm7225
 
 # USB
 PRODUCT_PACKAGES += \
