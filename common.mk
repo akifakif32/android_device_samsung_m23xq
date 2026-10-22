@@ -214,7 +214,7 @@ PRODUCT_SET_DEBUGFS_RESTRICTIONS := true
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@4.0-service.samsung
 
-$(call soong_config_set,samsungVars,target_keymaster4_library,//vendor/samsung/sm8250-common:libskeymaster4device)
+$(call soong_config_set,samsungVars,target_keymaster4_library,//vendor/samsung/sm7225-common:libskeymaster4device)
 
 # Lineage Health
 PRODUCT_PACKAGES += \
@@ -238,7 +238,7 @@ PRODUCT_PACKAGES += \
     android.software.media.c2-service.samsung
 
 $(call soong_config_set,samsungCodec2Vars,c2_instance_type,legacy_default0)
-$(call soong_config_set,samsungCodec2Vars,target_componentstore_library,//vendor/samsung/sm8250-common:libSecC2ComponentStore)
+$(call soong_config_set,samsungCodec2Vars,target_componentstore_library,//vendor/samsung/sm7225-common:libSecC2ComponentStore)
 $(call soong_config_set_bool,samsungCodec2Vars,uses_legacy_component_store,true)
 
 # Overlays
@@ -391,4 +391,4 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/qcom/opensource/usb/etc
 
 # Inherit proprietary blobs
-$(call inherit-product, vendor/samsung/sm8250-common/sm8250-common-vendor.mk)
+$(call inherit-product, vendor/samsung/sm7225-common/sm7225-common-vendor.mk)
