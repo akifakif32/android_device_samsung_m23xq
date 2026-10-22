@@ -125,7 +125,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media/media_profiles_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_vendor.xml
 
 PRODUCT_PACKAGES += \
-    android.hardware.camera.provider-service.samsung
+    android.hardware.camera.provider-service.samsung \
+    libui_shim
 
 # Charger
 PRODUCT_PACKAGES += \
@@ -145,11 +146,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.display.allocator-service \
     vendor.qti.hardware.display.composer-service \
     vendor.qti.hardware.memtrack-service
-
-ifneq ($(TARGET_IS_TABLET),true)
-PRODUCT_PACKAGES += \
-    AdvancedDisplay
-endif
 
 # Doze
 ifneq ($(TARGET_IS_TABLET),true)
