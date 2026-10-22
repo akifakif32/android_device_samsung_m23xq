@@ -83,10 +83,10 @@ bluetooth.profile.sap.server.enabled?=true
 persist.bluetooth.a2dp_offload.disabled=false
 persist.vendor.bt.aac_frm_ctl.enabled=true
 persist.vendor.bt.aac_vbr_frm_ctl.enabled=true
-persist.vendor.qcom.bluetooth.soc=hastings
+persist.vendor.qcom.bluetooth.soc=cherokee
 ro.bluetooth.a2dp_offload.supported=true
 ro.vendor.bluetooth.wipower=false
-vendor.qcom.bluetooth.soc=hastings
+vendor.qcom.bluetooth.soc=cherokee
 
 # Camera
 camera.disable_zsl_mode=1
@@ -94,7 +94,7 @@ ro.camera.notify_nfc=1
 
 # Chipset
 ro.soc.manufacturer=QTI
-ro.soc.model=SM8250
+ro.soc.model=SM7225
 
 # Crypto
 ro.crypto.dm_default_key.options_format.version=2
@@ -172,11 +172,11 @@ debug.stagefright.c2inputsurface=-1
 vendor.media.omx=0
 
 # NFC
-ro.vendor.nfc.info.antpos=1
+ro.vendor.nfc.info.antpos=16
 ro.vendor.nfc.support.advancedsetting=false
 ro.vendor.nfc.support.autoselect=true
 ro.vendor.nfc.support.defaultaid=true
-ro.vendor.nfc.support.ese=true
+ro.vendor.nfc.support.ese=false
 ro.vendor.nfc.support.nonaid=true
 ro.vendor.nfc.support.othercategory=true
 ro.vendor.nfc.support.uicc=true
