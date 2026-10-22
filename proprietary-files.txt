@@ -7,6 +7,8 @@ vendor/lib64/libadsp_default_listener.so
 vendor/lib64/libadsprpc.so
 vendor/lib64/libmdsprpc.so
 vendor/lib64/libsdsprpc.so
+vendor/lib/libadsp_default_listener.so
+vendor/lib/libadsprpc.so
 
 # ADSP modules
 vendor/lib/rfsa/adsp/capi_v2_aptX_CLHDAD_Encoder.so
@@ -68,6 +70,28 @@ vendor/lib/libspkrprot.so
 vendor/lib/libsurround_3mic_proc.so
 vendor/lib/spatializer-aidl-V1-cpp.so
 vendor/lib/vendor.qti.hardware.audiohalext@1.0.so
+vendor/lib/libbthost_if.so
+vendor/lib/soundfx/libqcompostprocbundle.so
+vendor/lib/soundfx/libqcomvisualizer.so
+vendor/lib64/libacdb-fts.so
+vendor/lib64/libacdbloader.so
+vendor/lib64/libacdbrtac.so
+vendor/lib64/libadiertac.so
+vendor/lib64/libaudcal.so
+vendor/lib64/libaudioparsers.so
+vendor/lib64/libbluetooth_audio_session_qti.so
+vendor/lib64/libbthost_if.so
+vendor/lib64/libgcs-calwrapper.so
+vendor/lib64/libgcs-ipc.so
+vendor/lib64/libgcs-osal.so
+vendor/lib64/libqtigef.so
+vendor/lib64/libsecaudiocoreutils.so
+vendor/lib64/libsecaudioinfo.so
+vendor/lib64/libspatializerparamstorage.so
+vendor/lib64/soundfx/libaudioeffectoffload.so
+vendor/lib64/soundfx/libqcompostprocbundle.so
+vendor/lib64/soundfx/libqcomvisualizer.so
+vendor/lib64/spatializer-aidl-V1-cpp.so
 
 # Audio FX modules
 vendor/lib/soundfx/libasphere.so
@@ -117,11 +141,14 @@ vendor/lib64/libcdsp_default_listener.so
 vendor/lib64/libcdsprpc.so
 vendor/lib64/libsysmon_cdsp_skel.so
 vendor/lib/vendor.qti.hardware.dsp@1.0.so
+vendor/lib/libcdsp_default_listener.so
+vendor/lib/libsdsprpc.so
 
 # CVP
 vendor/lib64/libcvp_common.so
 vendor/lib64/libcvpcpuRev_skel.so
 vendor/lib64/vendor.qti.hardware.cvp@1.0.so
+vendor/lib/libcvp_common.so
 
 # Camera
 vendor/lib64/hw/camera.qcom.so
@@ -263,6 +290,12 @@ vendor/lib64/libtriplecam_image_optical_zoom.so
 vendor/lib64/libtriplecam_optical_zoom_control.so
 vendor/lib64/libtriplecam_video_optical_zoom.so
 vendor/lib64/libvdis_interface.so
+vendor/lib/libsec2qc_conversion.so
+vendor/lib64/libcamerapostproc.so
+vendor/lib64/libfocuspeaking_interface.so
+vendor/lib64/liblivefocus_preview_interface.so
+vendor/lib64/libsec2qc_conversion.so
+vendor/lib64/libsuper_night_interface.so
 
 # Camera (Samsung unihal)
 vendor/bin/loadalgo
@@ -435,6 +468,7 @@ vendor/lib64/libsynaFpSensorTestNwd.so
 
 # FM
 vendor/lib/vendor.qti.hardware.fm@1.0.so
+vendor/lib64/vendor.qti.hardware.fm@1.0.so
 
 # Gatekeeper
 vendor/lib64/hw/gatekeeper.mdfpp.so
@@ -497,6 +531,30 @@ vendor/lib64/vendor.qti.gnss@4.0.so
 vendor/lib64/vendor.qti.hardware.cacert@1.0.so
 vendor/lib64/vendor.qti.hardware.qccsyshal@1.0.so
 vendor/lib64/vendor.samsung.hardware.gnss@2.0.so
+vendor/etc/xtwifi.conf
+vendor/lib/libbatching.so
+vendor/lib/libcacertclient.so
+vendor/lib/libcdfw.so
+vendor/lib/libdataitems.so
+vendor/lib/libgeofencing.so
+vendor/lib/libgnss.so
+vendor/lib/libloc_api_v02.so
+vendor/lib/libloc_socket.so
+vendor/lib/liblocation_api.so
+vendor/lib/liblocationservice.so
+vendor/lib/liblocationservice_glue.so
+vendor/lib/liblowi_client.so
+vendor/lib/libmmosal.so
+vendor/lib/libsynergy_loc_api.so
+vendor/lib/vendor.qti.gnss@1.0.so
+vendor/lib/vendor.qti.gnss@1.1.so
+vendor/lib/vendor.qti.gnss@1.2.so
+vendor/lib/vendor.qti.gnss@2.0.so
+vendor/lib/vendor.qti.gnss@2.1.so
+vendor/lib/vendor.qti.gnss@3.0.so
+vendor/lib/vendor.qti.gnss@4.0.so
+vendor/lib/vendor.qti.hardware.cacert@1.0.so
+vendor/lib/vendor.qti.hardware.qccsyshal@1.0.so
 
 # Graphics (Adreno firmware)
 vendor/firmware/a619_gmu.bin
@@ -595,6 +653,8 @@ vendor/lib64/unnhal-acc-adreno.so
 vendor/lib64/unnhal-acc-common.so
 vendor/lib64/unnhal-acc-hta.so
 vendor/lib64/unnhal-acc-hvx.so
+vendor/lib/libhta_hexagon_runtime.so
+vendor/lib/libnpu.so
 
 # Perf
 vendor/etc/msm_irqbalance.conf
@@ -724,6 +784,7 @@ vendor/lib64/libxml.so
 vendor/lib/libdsi_netctrl.so
 vendor/lib/libnetmgr.so
 vendor/lib/libnetmgr_common.so
+vendor/lib/libsemnativecarrierfeature.so
 
 # RIL-SEC - from dm2qxxx-user 14 UP1A.231005.007 S9160ZHS5CYA1 release-keys
 vendor/bin/hw/rild|b4e84db4ab705dd2689424d65ba06f74156e3ada
@@ -823,6 +884,8 @@ vendor/lib/sensors.grip.so
 vendor/lib/sensors.ssc.so
 vendor/lib64/sensors.grip.so
 vendor/lib64/sensors.ssc.so
+vendor/lib/libsns_low_lat_stream_stub.so
+vendor/lib/libssc_default_listener.so
 
 # SMC Invoke
 vendor/lib/libminkdescriptor.so
@@ -842,6 +905,10 @@ vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti
 vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc
 vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so
 vendor/lib/vendor.qti.hardware.tui_comm@1.0.so
+vendor/lib/libGPTEE_vendor.so
+vendor/lib/libStDrvInt.so
+vendor/lib/libsecureui.so
+vendor/lib/libsecureui_svcsock.so
 
 # Thermal
 vendor/bin/hw/vendor.samsung.hardware.thermal@1.0-service
@@ -869,6 +936,9 @@ vendor/lib64/libvpplibrary.so
 vendor/lib64/vendor.qti.hardware.vpp@1.1.so
 vendor/lib64/vendor.qti.hardware.vpp@1.2.so
 vendor/lib64/vendor.qti.hardware.vpp@1.3.so
+vendor/lib/vendor.qti.hardware.vpp@1.1.so
+vendor/lib/vendor.qti.hardware.vpp@1.2.so
+vendor/lib/vendor.qti.hardware.vpp@1.3.so
 
 # Widevine DRM
 vendor/bin/hw/android.hardware.drm@1.3-service.widevine
