@@ -239,6 +239,18 @@ $(call soong_config_set,samsungCodec2Vars,c2_instance_type,legacy_default0)
 $(call soong_config_set,samsungCodec2Vars,target_componentstore_library,//vendor/samsung/sm7225-common:libSecC2ComponentStore)
 $(call soong_config_set_bool,samsungCodec2Vars,uses_legacy_component_store,true)
 
+# NFC
+PRODUCT_PACKAGES += \
+    com.android.nfc_extras \
+    Tag
+
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.nfc.hce.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.nfc.hce.xml \
+    frameworks/native/data/etc/android.hardware.nfc.hcef.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.nfc.hcef.xml \
+    frameworks/native/data/etc/android.hardware.nfc.uicc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.nfc.uicc.xml \
+    frameworks/native/data/etc/android.hardware.nfc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.nfc.xml \
+    frameworks/native/data/etc/com.nxp.mifare.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.nxp.mifare.xml
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
