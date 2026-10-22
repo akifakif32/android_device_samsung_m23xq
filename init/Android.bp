@@ -59,13 +59,6 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
-    name: "init.samsung.battery.rc",
-    src: "init.samsung.battery.rc",
-    sub_dir: "init/hw",
-    soc_specific: true,
-}
-
-prebuilt_etc {
     name: "init.samsung.bsp.rc",
     src: "init.samsung.bsp.rc",
     sub_dir: "init/hw",
@@ -73,22 +66,8 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
-    name: "init.samsung.camera.rc",
-    src: "init.samsung.camera.rc",
-    sub_dir: "init/hw",
-    soc_specific: true,
-}
-
-prebuilt_etc {
     name: "init.samsung.display.rc",
     src: "init.samsung.display.rc",
-    sub_dir: "init/hw",
-    soc_specific: true,
-}
-
-prebuilt_etc {
-    name: "init.samsung.eif.rc",
-    src: "init.samsung.eif.rc",
     sub_dir: "init/hw",
     soc_specific: true,
 }
