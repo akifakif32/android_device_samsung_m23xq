@@ -9,6 +9,9 @@ $(call inherit-product, $(LOCAL_PATH)/common.mk)
 # API levels
 PRODUCT_SHIPPING_API_LEVEL := 31
 
+# VINTF
+PRODUCT_OTA_ENFORCE_VINTF_KERNEL_REQUIREMENTS := false
+
 # Init
 PRODUCT_PACKAGES += \
     init.m23xq.rc
