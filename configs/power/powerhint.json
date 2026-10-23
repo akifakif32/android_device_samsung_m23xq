@@ -31,24 +31,6 @@
             "ResetOnInit": true
         },
         {
-            "Name": "CPULittleClusterUpRateLimit",
-            "Path": "/sys/devices/system/cpu/cpu0/cpufreq/schedutil/up_rate_limit_us",
-            "Values": [
-                "500",
-                "2000"
-            ],
-            "ResetOnInit": true
-        },
-        {
-            "Name": "CPULittleClusterDownRateLimit",
-            "Path": "/sys/devices/system/cpu/cpu0/cpufreq/schedutil/down_rate_limit_us",
-            "Values": [
-                "20000",
-                "2000"
-            ],
-            "ResetOnInit": true
-        },
-        {
             "Name": "CPUBigClusterMaxFreq",
             "Path": "/sys/devices/system/cpu/cpu6/cpufreq/scaling_max_freq",
             "Values": [
@@ -76,24 +58,6 @@
                 "1248000",
                 "1036800",
                 "787200"
-            ],
-            "ResetOnInit": true
-        },
-        {
-            "Name": "CPUBigClusterUpRateLimit",
-            "Path": "/sys/devices/system/cpu/cpu6/cpufreq/schedutil/up_rate_limit_us",
-            "Values": [
-                "500",
-                "2000"
-            ],
-            "ResetOnInit": true
-        },
-        {
-            "Name": "CPUBigClusterDownRateLimit",
-            "Path": "/sys/devices/system/cpu/cpu6/cpufreq/schedutil/down_rate_limit_us",
-            "Values": [
-                "10000",
-                "2000"
             ],
             "ResetOnInit": true
         },
@@ -160,60 +124,6 @@
             "ResetOnInit": true
         },
         {
-            "Name": "CPUBWHystTriggerCount",
-            "Path": "/sys/class/devfreq/soc:qcom,cpu-cpu-llcc-bw/bw_hwmon/hyst_trigger_count",
-            "Values": [
-                "0",
-                "3"
-            ],
-            "ResetOnInit": true
-        },
-        {
-            "Name": "CPUBWHistMemory",
-            "Path": "/sys/class/devfreq/soc:qcom,cpu-cpu-llcc-bw/bw_hwmon/hist_memory",
-            "Values": [
-                "0",
-                "20"
-            ],
-            "ResetOnInit": true
-        },
-        {
-            "Name": "CPUBWHystLength",
-            "Path": "/sys/class/devfreq/soc:qcom,cpu-cpu-llcc-bw/bw_hwmon/hyst_length",
-            "Values": [
-                "0",
-                "10"
-            ],
-            "ResetOnInit": true
-        },
-        {
-            "Name": "CPUBWSampleMs",
-            "Path": "/sys/class/devfreq/soc:qcom,cpu-cpu-llcc-bw/bw_hwmon/sample_ms",
-            "Values": [
-                "10",
-                "4"
-            ],
-            "ResetOnInit": true
-        },
-        {
-            "Name": "CPUBWIOPercent",
-            "Path": "/sys/class/devfreq/soc:qcom,cpu-cpu-llcc-bw/bw_hwmon/io_percent",
-            "Values": [
-                "80",
-                "34"
-            ],
-            "ResetOnInit": true
-        },
-        {
-            "Name": "CPUBWUseAb",
-            "Path": "/sys/class/devfreq/soc:qcom,cpu-cpu-llcc-bw/bw_hwmon/use_ab",
-            "Values": [
-                "0",
-                "1"
-            ],
-            "ResetOnInit": true
-        },
-        {
             "Name": "CPUBWMinFreq",
             "Path": "/sys/class/devfreq/soc:qcom,cpu-cpu-llcc-bw/min_freq",
             "Values": [
@@ -234,47 +144,11 @@
             "ResetOnInit": true
         },
         {
-            "Name": "LLCCBWSampleMs",
-            "Path": "/sys/class/devfreq/soc:qcom,cpu-llcc-ddr-bw/bw_hwmon/sample_ms",
-            "Values": [
-                "10",
-                "4"
-            ],
-            "ResetOnInit": true
-        },
-        {
-            "Name": "LLCCBWHystLength",
-            "Path": "/sys/class/devfreq/soc:qcom,cpu-llcc-ddr-bw/bw_hwmon/hyst_length",
-            "Values": [
-                "0",
-                "10"
-            ],
-            "ResetOnInit": true
-        },
-        {
-            "Name": "LLCCBWUseAb",
-            "Path": "/sys/class/devfreq/soc:qcom,cpu-llcc-ddr-bw/bw_hwmon/use_ab",
-            "Values": [
-                "0",
-                "1"
-            ],
-            "ResetOnInit": true
-        },
-        {
             "Name": "L3LittleClusterMinFreq",
             "Path": "/sys/class/devfreq/18321000.qcom,devfreq-l3:qcom,cpu0-cpu-l3-lat/min_freq",
             "Values": [
                 "1459200000",
                 "300000000"
-            ],
-            "ResetOnInit": true
-        },
-        {
-            "Name": "LLCCBWHystTriggerCount",
-            "Path": "/sys/class/devfreq/soc:qcom,cpu-llcc-ddr-bw/bw_hwmon/hyst_trigger_count",
-            "Values": [
-                "0",
-                "3"
             ],
             "ResetOnInit": true
         },
@@ -377,18 +251,6 @@
             "Value": "1"
         },
         {
-            "PowerHint": "INTERACTIVE",
-            "Node": "CPUBigClusterUpRateLimit",
-            "Duration": 0,
-            "Value": "500"
-        },
-        {
-            "PowerHint": "INTERACTIVE",
-            "Node": "CPUBigClusterDownRateLimit",
-            "Duration": 0,
-            "Value": "10000"
-        },
-        {
             "PowerHint": "INTERACTION",
             "Node": "CPULittleClusterMinFreq",
             "Duration": 0,
@@ -399,36 +261,6 @@
             "Node": "CPUBigClusterMinFreq",
             "Duration": 0,
             "Value": "1766400"
-        },
-        {
-            "PowerHint": "INTERACTION",
-            "Node": "CPUBWHystTriggerCount",
-            "Duration": 0,
-            "Value": "0"
-        },
-        {
-            "PowerHint": "INTERACTIVE",
-            "Node": "CPULittleClusterUpRateLimit",
-            "Duration": 0,
-            "Value": "500"
-        },
-        {
-            "PowerHint": "INTERACTIVE",
-            "Node": "CPULittleClusterDownRateLimit",
-            "Duration": 0,
-            "Value": "20000"
-        },
-        {
-            "PowerHint": "INTERACTION",
-            "Node": "CPUBWHystLength",
-            "Duration": 0,
-            "Value": "0"
-        },
-        {
-            "PowerHint": "INTERACTION",
-            "Node": "CPUBWHistMemory",
-            "Duration": 0,
-            "Value": "0"
         },
         {
             "PowerHint": "INTERACTION",
@@ -465,24 +297,6 @@
             "Node": "PMQoSCpuDmaLatency",
             "Duration": 5000,
             "Value": "71"
-        },
-        {
-            "PowerHint": "LAUNCH",
-            "Node": "CPUBWHystTriggerCount",
-            "Duration": 5000,
-            "Value": "0"
-        },
-        {
-            "PowerHint": "LAUNCH",
-            "Node": "CPUBWHystLength",
-            "Duration": 5000,
-            "Value": "0"
-        },
-        {
-            "PowerHint": "LAUNCH",
-            "Node": "CPUBWHistMemory",
-            "Duration": 5000,
-            "Value": "0"
         },
         {
             "PowerHint": "LAUNCH",
