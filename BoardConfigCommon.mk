@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-COMMON_PATH := device/samsung/sm7225-common
+COMMON_PATH := device/samsung/m23xq
 
 # A/B
 AB_OTA_UPDATER := false

@@ -3,7 +3,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/samsung/sm7225-common
+DEVICE_PATH := device/samsung/m23xq
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 100663296
