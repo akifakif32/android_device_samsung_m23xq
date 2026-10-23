@@ -952,7 +952,7 @@
         <item>1,1</item>
         <item>0,1</item>
     </string-array>
-    <bool name="config_dozeAlwaysOnDisplayAvailable">true</bool>
+    <bool name="config_dozeAlwaysOnDisplayAvailable">false</bool>
     <bool name="config_dozeAlwaysOnEnabled">false</bool>
     <bool name="config_telephony5gStandalone">true</bool>
     <bool name="config_telephony5gNonStandalone">true</bool>
