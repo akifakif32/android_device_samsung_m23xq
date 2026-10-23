@@ -98,6 +98,11 @@ PRODUCT_PACKAGES += \
 
 TARGET_EXCLUDES_AUDIOFX := true
 
+PRODUCT_PACKAGES_DEBUG += \
+    tinycap \
+    tinymix \
+    tinyplay
+
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/configs/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml \
     $(LOCAL_PATH)/audio/configs/audio_io_policy.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_io_policy.conf\
