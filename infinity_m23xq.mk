@@ -14,14 +14,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from device makefile
 $(call inherit-product, device/samsung/m23xq/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common Infinity stuff.
+$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
 
 # Display
 TARGET_SCREEN_HEIGHT := 2408
 TARGET_SCREEN_WIDTH := 1080
 
-PRODUCT_NAME := lineage_m23xq
+PRODUCT_NAME := infinity_m23xq
 PRODUCT_DEVICE := m23xq
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SM-M236B

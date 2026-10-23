@@ -14,4 +14,4 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_m23xq.mk
+    $(LOCAL_DIR)/infinity_m23xq.mk
