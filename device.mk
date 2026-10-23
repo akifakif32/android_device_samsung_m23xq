@@ -6,6 +6,9 @@
 # Common
 $(call inherit-product, $(LOCAL_PATH)/common.mk)
 
+# API levels
+PRODUCT_SHIPPING_API_LEVEL := 31
+
 # Init
 PRODUCT_PACKAGES += \
     init.m23xq.rc
