@@ -320,6 +320,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.vibrator-service.sm7225
 
+# Vendor service manager
+PRODUCT_PACKAGES += \
+    vndservicemanager
+
 # USB
 PRODUCT_PACKAGES += \
     android.hardware.usb-service.qti \
