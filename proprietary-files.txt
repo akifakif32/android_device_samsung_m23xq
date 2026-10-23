@@ -41,8 +41,8 @@ vendor/lib/rfsa/adsp/libsns_low_lat_stream_skel.so
 vendor/lib64/com.qualcomm.qti.ant@1.0.so
 
 # Audio
-system_ext/etc/permissions/audiosphere.xml
-system_ext/framework/audiosphere.jar
+system_ext/etc/permissions/audiosphere.xml|015ad7be4921039238bfa3d34d052d752453e49c
+system_ext/framework/audiosphere.jar|cfe651014a70739e4a2a41dc746fa8111f092bde
 vendor/etc/dolby/dax-default.xml
 vendor/etc/audio_tuning_mixer.txt
 vendor/etc/mixer_paths.xml
