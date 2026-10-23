@@ -1010,7 +1010,6 @@ vendor/bin/cnss-daemon
 vendor/firmware/Data.msc
 
 # WiFi (firmware)
-vendor/firmware/wlan/qca_cld/WCNSS_qcom_cfg.ini
 vendor/firmware/wlan/qca_cld/bdwlan.bin
 vendor/firmware/wlan/qca_cld/bdwlan.bin1
 vendor/firmware/wlan/qca_cld/regdb.bin
