@@ -93,8 +93,12 @@ PRODUCT_PACKAGES += \
     libqcomvoiceprocessing \
     libreverbwrapper \
     libvisualizer \
+    libsamsungSoundbooster_plus \
     libvolumelistener \
-    SamsungDAP
+    SamsungDAP \
+    SoundBoosterStage
+
+$(call soong_config_set,samsungAudioVars,soundbooster_dsp_library,//vendor/samsung/m23xq:lib_SoundBooster_ver1050)
 
 TARGET_EXCLUDES_AUDIOFX := true
 
