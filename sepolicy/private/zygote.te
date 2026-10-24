@@ -1,0 +1,2 @@
+# Zygote reads pid_max at start and falls back to the default when it can't
+dontaudit zygote proc_pid_max:file r_file_perms;

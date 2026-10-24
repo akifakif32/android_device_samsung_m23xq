@@ -1,0 +1,2 @@
+# The GPU work BPF map isn't provided for this GPU
+dontaudit gpuservice fs_bpf:file getattr;

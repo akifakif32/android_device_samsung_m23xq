@@ -26,3 +26,6 @@ allow hal_camera_default hal_system_suspend_service:service_manager find;
 allow hal_camera_default sysfs_oem_memory:file { getattr open read write };
 
 set_prop(hal_camera_default, sec_camera_prop)
+
+# The camera blob opens every property area on start
+dontaudit hal_camera_default property_type:file r_file_perms;

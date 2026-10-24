@@ -4,6 +4,7 @@ allow hal_thermal_default sysfs_power:lnk_file r_file_perms;
 r_dir_file(hal_thermal_default, vendor_sysfs_thermal)
 allow hal_thermal_default vendor_sysfs_thermal:file w_file_perms;
 
+allow hal_thermal_default sysfs_batteryinfo:dir search;
 allow hal_thermal_default sysfs_batteryinfo:file r_file_perms;
 
 allow hal_thermal_default fwk_camera_hwservice:hwservice_manager find;

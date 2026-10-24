@@ -1,0 +1,2 @@
+# The GNSS HAL probes core properties it doesn't need
+dontaudit vendor_hal_gnss_qti system_prop:file r_file_perms;
