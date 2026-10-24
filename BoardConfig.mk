@@ -21,7 +21,6 @@ TARGET_SCREEN_DENSITY := 450
 # Kernel
 TARGET_KERNEL_CONFIG += vendor/samsung/m23xq.config
 TARGET_KERNEL_ADDITIONAL_FLAGS += PROJECT_NAME=m23xq
-BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 
 # Platform
 BOARD_NAME := lito
