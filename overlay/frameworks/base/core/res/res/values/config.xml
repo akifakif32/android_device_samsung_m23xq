@@ -906,8 +906,13 @@
     <integer name="config_num_physical_slots">2</integer>
     <bool name="config_carrier_volte_available">true</bool>
     <bool name="config_device_volte_available">true</bool>
-    <bool name="config_device_vt_available">true</bool>
+    <bool name="config_device_vt_available">false</bool>
     <bool name="config_device_wfc_ims_available">true</bool>
+    <bool name="config_use_voip_mode_for_ims">true</bool>
+    <string-array name="config_serviceStateLocationAllowedPackages">
+        <item>com.android.phone</item>
+        <item>com.android.imsstack</item>
+    </string-array>
     <bool name="config_hotswapCapable">true</bool>
     <bool name="config_speed_up_audio_on_mt_calls">true</bool>
     <bool name="config_switch_phone_on_voice_reg_state_change">false</bool>

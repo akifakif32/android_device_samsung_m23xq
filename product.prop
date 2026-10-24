@@ -1,2 +1,7 @@
 # BPF
 ro.bpf.kver_override=5.10.239
+
+# IMS
+persist.dbg.allow_ims_off=1
+persist.dbg.volte_avail_ovr=1
+persist.dbg.wfc_avail_ovr=1
