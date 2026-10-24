@@ -13,5 +13,6 @@
         android:label="Speaker Limiter"
         android:persistent="true"
         android:directBootAware="true"
+        android:defaultToDeviceProtectedStorage="true"
         android:allowBackup="false" />
 </manifest>

@@ -184,12 +184,6 @@ on charger
     setprop sys.usb.controller a600000.dwc3
     setprop sys.usb.configfs 1
 
-service vendor.lowi /vendor/bin/sscrpcd
-    class core
-    user system
-    group system wakelock
-    capabilities BLOCK_SUSPEND
-
 # pd-mapper
 service vendor.pd_mapper /vendor/bin/pd-mapper
     class core
