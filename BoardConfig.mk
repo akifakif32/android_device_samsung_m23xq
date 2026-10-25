@@ -29,8 +29,8 @@ BOARD_AVB_RECOVERY_ROLLBACK_INDEX := $(PLATFORM_SECURITY_PATCH_TIMESTAMP)
 BOARD_AVB_RECOVERY_ROLLBACK_INDEX_LOCATION := 1
 
 # Platform
-TARGET_BOARD_PLATFORM := kona
-TARGET_BOOTLOADER_BOARD_NAME := kona
+TARGET_BOARD_PLATFORM := lito
+TARGET_BOOTLOADER_BOARD_NAME := lito
 
 TARGET_NO_BOOTLOADER := true
 
@@ -59,6 +59,7 @@ BOARD_KERNEL_CMDLINE := \
     androidboot.hardware=qcom \
     androidboot.memcg=1 \
     androidboot.usbcontroller=a600000.dwc3 \
+    cgroup.memory=nokmem,nosocket \
     console=null \
     firmware_class.path=/vendor/firmware_mnt/image \
     loop.max_part=7 \
@@ -72,10 +73,10 @@ BOARD_KERNEL_PAGESIZE      := 4096
 
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
 
-TARGET_KERNEL_SOURCE := kernel/samsung/sm8250
+TARGET_KERNEL_SOURCE := kernel/samsung/sm7225
 TARGET_KERNEL_CONFIG := \
-    vendor/kona-perf_defconfig \
-    vendor/samsung/kona-sec-common.config
+    vendor/lito-perf_defconfig \
+    vendor/samsung/lito-sec-common.config
 
 # Additional root folders
 TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
