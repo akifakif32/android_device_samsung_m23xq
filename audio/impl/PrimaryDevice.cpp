@@ -21,6 +21,7 @@
 
 #include <cutils/properties.h>
 #include <string.h>
+#include <unistd.h>
 
 #if MAJOR_VERSION >= 4
 #include <cmath>
@@ -223,9 +224,13 @@ Return<Result> PrimaryDevice::setMode(AudioMode mode) {
     property_get("vendor.calls.slot_id0", simSlot1, "");
     property_get("vendor.calls.slot_id1", simSlot2, "");
 
-    // Wait until one sim slot reports a call
+    // Wait until one sim slot reports a call. The RIL only sets these props
+    // for CS calls; IMS calls never set them, so don't wait forever (audioserver
+    // aborts after 5 s). Give up after ~1 s.
     if (mode == AudioMode::IN_CALL) {
-        while (strcmp(simSlot1, "0") == 0 && strcmp(simSlot2, "0") == 0) {
+        for (int i = 0; i < 100 && strcmp(simSlot1, "0") == 0 && strcmp(simSlot2, "0") == 0;
+             i++) {
+            usleep(10000);
             property_get("vendor.calls.slot_id0", simSlot1, "");
             property_get("vendor.calls.slot_id1", simSlot2, "");
         }
