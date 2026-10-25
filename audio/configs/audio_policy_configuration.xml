@@ -120,6 +120,14 @@
                     <profile name="" format="AUDIO_FORMAT_PCM_8_24_BIT"
                              samplingRates="48000" channelMasks="AUDIO_CHANNEL_OUT_STEREO"/>
                 </devicePort>
+                <devicePort tagName="Wired Headset" type="AUDIO_DEVICE_OUT_WIRED_HEADSET" role="sink">
+                    <profile name="" format="AUDIO_FORMAT_PCM_16_BIT"
+                             samplingRates="48000" channelMasks="AUDIO_CHANNEL_OUT_STEREO"/>
+                </devicePort>
+                <devicePort tagName="Wired Headphones" type="AUDIO_DEVICE_OUT_WIRED_HEADPHONE" role="sink">
+                    <profile name="" format="AUDIO_FORMAT_PCM_16_BIT"
+                             samplingRates="48000" channelMasks="AUDIO_CHANNEL_OUT_STEREO"/>
+                </devicePort>
                 <devicePort tagName="BT SCO" type="AUDIO_DEVICE_OUT_BLUETOOTH_SCO" role="sink">
                     <profile name="" format="AUDIO_FORMAT_PCM_16_BIT"
                              samplingRates="48000" channelMasks="AUDIO_CHANNEL_OUT_STEREO"/>
@@ -155,6 +163,11 @@
                              samplingRates="8000 11025 12000 16000 22050 24000 32000 44100 48000"
                              channelMasks="AUDIO_CHANNEL_IN_MONO AUDIO_CHANNEL_IN_STEREO AUDIO_CHANNEL_IN_FRONT_BACK"/>
                 </devicePort>
+                <devicePort tagName="Wired Headset Mic" type="AUDIO_DEVICE_IN_WIRED_HEADSET" role="source">
+                    <profile name="" format="AUDIO_FORMAT_PCM_16_BIT"
+                             samplingRates="8000 11025 12000 16000 22050 24000 32000 44100 48000"
+                             channelMasks="AUDIO_CHANNEL_IN_MONO AUDIO_CHANNEL_IN_STEREO AUDIO_CHANNEL_IN_FRONT_BACK"/>
+                </devicePort>
                 <devicePort tagName="FM Tuner" type="AUDIO_DEVICE_IN_FM_TUNER" role="source">
                     <profile name="" format="AUDIO_FORMAT_PCM_16_BIT"
                              samplingRates="8000 11025 12000 16000 22050 24000 32000 44100 48000"
@@ -186,6 +199,10 @@
                        sources="primary output,deep_buffer,fast,compressed_offload"/>
                 <route type="mix" sink="Speaker"
                        sources="primary output,deep_buffer,fast,raw,compressed_offload,mmap_no_irq_out,spatializer"/>
+                <route type="mix" sink="Wired Headset"
+                       sources="primary output,deep_buffer,fast,raw,compressed_offload,mmap_no_irq_out,spatializer"/>
+                <route type="mix" sink="Wired Headphones"
+                       sources="primary output,deep_buffer,fast,raw,compressed_offload,mmap_no_irq_out,spatializer"/>
                 <route type="mix" sink="HDMI"
                        sources="primary output,deep_buffer,fast,raw,direct_pcm,compressed_offload"/>
                 <route type="mix" sink="BT SCO"
@@ -201,9 +218,9 @@
                 <route type="mix" sink="Telephony Tx"
                        sources="voice_tx,incall_music_uplink"/>
                 <route type="mix" sink="primary input"
-                       sources="Built-In Mic,Built-In Back Mic,BT SCO Headset Mic,FM Tuner,Aux Device In,USB Device In,USB Headset In,Telephony Rx"/>
+                       sources="Built-In Mic,Built-In Back Mic,Wired Headset Mic,BT SCO Headset Mic,FM Tuner,Aux Device In,USB Device In,USB Headset In,Telephony Rx"/>
                 <route type="mix" sink="mmap_no_irq_in"
-                       sources="Built-In Mic,Built-In Back Mic,USB Device In,USB Headset In"/>
+                       sources="Built-In Mic,Built-In Back Mic,Wired Headset Mic,USB Device In,USB Headset In"/>
                 <route type="mix" sink="hifi_input" sources="USB Device In,USB Headset In" />
             </routes>
 
