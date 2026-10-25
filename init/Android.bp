@@ -191,3 +191,10 @@ sh_binary {
     src: "init.qti.dcvs.sh",
     soc_specific: true,
 }
+
+prebuilt_etc {
+    name: "init.m23xq.rc",
+    src: "init.m23xq.rc",
+    sub_dir: "init/hw",
+    soc_specific: true,
+}

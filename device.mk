@@ -33,7 +33,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
 # Shipping API level
-PRODUCT_SHIPPING_API_LEVEL := 29
+PRODUCT_SHIPPING_API_LEVEL := 31
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/non_ab_device.mk)
 
@@ -44,6 +44,7 @@ PRODUCT_PACKAGES += \
     fstab.ramplus \
     init.audio.samsung.rc \
     init.fingerprint.rc \
+    init.m23xq.rc \
     init.qcom.rc \
     init.qcom.recovery.rc \
     init.ramplus.rc \
@@ -73,6 +74,8 @@ PRODUCT_PACKAGES += \
     init.qcom.post_boot.sh \
     init.qcom.sh \
     init.qti.dcvs.sh
+
+$(call soong_config_set,libinit,vendor_init_lib,//$(LOCAL_PATH):libinit_samsung_m23xq)
 
 # Audio
 PRODUCT_PACKAGES += \
@@ -241,6 +244,10 @@ $(call soong_config_set,samsungCodec2Vars,c2_instance_type,legacy_default0)
 $(call soong_config_set,samsungCodec2Vars,target_componentstore_library,//vendor/samsung/m23xq:libSecC2ComponentStore)
 $(call soong_config_set_bool,samsungCodec2Vars,uses_legacy_component_store,true)
 
+# NFC
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/nfc/libnfc-nxp_RF.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp_RF.conf
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
@@ -341,6 +348,9 @@ endif
 PRODUCT_PACKAGES += \
     android.hardware.sensors-service.samsung-multihal
 
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf
+
 # Tether
 ifneq ($(TARGET_IS_WIFI-ONLY),true)
 PRODUCT_PACKAGES += \
@@ -361,6 +371,9 @@ PRODUCT_PACKAGES += \
     android.hardware.usb-service.qti \
     init.qcom.usb.rc \
     init.qcom.usb.sh
+
+# VINTF
+PRODUCT_OTA_ENFORCE_VINTF_KERNEL_REQUIREMENTS := false
 
 # WiFi
 PRODUCT_PACKAGES += \

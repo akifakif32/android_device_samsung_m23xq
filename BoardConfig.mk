@@ -31,6 +31,7 @@ BOARD_AVB_RECOVERY_ROLLBACK_INDEX_LOCATION := 1
 # Platform
 TARGET_BOARD_PLATFORM := lito
 TARGET_BOOTLOADER_BOARD_NAME := lito
+BOARD_NAME := lito
 
 TARGET_NO_BOOTLOADER := true
 
@@ -48,6 +49,9 @@ TARGET_2ND_CPU_ABI := armeabi-v7a
 TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := generic
 TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a55
+
+# Display
+TARGET_SCREEN_DENSITY := 450
 
 # Kernel
 BOARD_KERNEL_IMAGE_NAME        := Image
@@ -76,7 +80,9 @@ BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
 TARGET_KERNEL_SOURCE := kernel/samsung/sm7225
 TARGET_KERNEL_CONFIG := \
     vendor/lito-perf_defconfig \
-    vendor/samsung/lito-sec-common.config
+    vendor/samsung/lito-sec-common.config \
+    vendor/samsung/m23xq.config
+TARGET_KERNEL_ADDITIONAL_FLAGS += PROJECT_NAME=m23xq
 
 # Additional root folders
 TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
@@ -104,7 +110,17 @@ BOARD_USES_METADATA_PARTITION        := true
 TARGET_USERIMAGES_USE_F2FS           := true
 TARGET_USERIMAGES_USE_EXT4           := true
 
+# OTA
+TARGET_OTA_ASSERT_DEVICE := m23xq
+TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/board-info.txt
+
 # Partitions
+BOARD_BOOTIMAGE_PARTITION_SIZE := 100663296
+BOARD_CACHEIMAGE_PARTITION_SIZE := 629145600
+BOARD_DTBOIMG_PARTITION_SIZE := 8388608
+BOARD_RECOVERYIMAGE_PARTITION_SIZE := 81788928
+BOARD_SUPER_PARTITION_SIZE := 10385096704
+
 -include vendor/lineage/config/BoardConfigReservedSize.mk
 
 BOARD_QTI_DYNAMIC_PARTITIONS_PARTITION_LIST := system system_ext odm product vendor
@@ -145,6 +161,7 @@ ifneq ($(TARGET_IS_WIFI-ONLY),true)
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/vintf/network_manifest.xml
 endif
 DEVICE_MATRIX_FILE := hardware/qcom-caf/common/compatibility_matrix.xml
+DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/manifest.xml
 
 # Media
 TARGET_USES_ION := true
