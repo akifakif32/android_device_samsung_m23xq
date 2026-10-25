@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="physical_power_button_center_screen_location_y">940px</dimen>
+    <dimen name="physical_fingerprint_sensor_center_screen_location_y">940px</dimen>
+    <dimen name="physical_fingerprint_sensor_center_screen_location_x">1080px</dimen>
+    <dimen name="rounded_corner_content_padding">14dp</dimen>
+    <dimen name="keyguard_carrier_text_margin">16dp</dimen>
+
+    <item name="pixel_pitch" format="float" type="dimen">63.5</item>
+</resources>

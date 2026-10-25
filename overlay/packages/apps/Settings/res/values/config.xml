@@ -50,4 +50,8 @@
         <item>0</item>
         <item>256</item>
     </integer-array>
+
+    <bool name="config_vibration_supports_multiple_intensities">true</bool>
+    <bool name="config_show_min_refresh_rate_switch">true</bool>
+    <integer name="config_fingerprintSensorLocation">3</integer>
 </resources>

@@ -16,7 +16,12 @@
     <string-array name="config_restartActionsList">
         <item>restart</item>
         <item>restart_recovery</item>
-        <item>restart_fastboot</item>
         <item>restart_download</item>
      </string-array>
+
+    <!-- Whether device has a notch -->
+    <bool name="config_haveNotch">true</bool>
+
+    <!-- Whether device has a screen with aspect ratio higher than 16:9 -->
+    <bool name="config_haveHigherAspectRatioScreen">true</bool>
 </resources>
