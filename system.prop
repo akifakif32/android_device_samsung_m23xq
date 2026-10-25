@@ -15,3 +15,10 @@ ro.vendor.qti.va_aosp.support=1
 
 # Netflix
 ro.netflix.bsp_rev=Q7250-19133-1
+
+#Infinity Flags
+ro.product.marketname=Samsung Galaxy M23 5G
+ro.infinity.soc=Snapdragon 750G
+ro.infinity.battery=5000 mAh
+ro.infinity.display=1080 x 2408, 120 Hz
+ro.infinity.camera=50MP+8MP+2MP
