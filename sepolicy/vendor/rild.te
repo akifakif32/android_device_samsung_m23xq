@@ -25,3 +25,6 @@ allowxperm rild tun_device:chr_file ioctl { 0x54ca 0x54cb };
 
 set_prop(rild, vendor_data_ko_prop)
 set_prop(rild, vendor_data_shsusr_prop)
+
+# libsec-ril probes core properties it doesn't need
+dontaudit rild { default_prop system_prop }:file r_file_perms;

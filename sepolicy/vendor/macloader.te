@@ -34,3 +34,6 @@ allow macloader sysfs_wifi:dir search;
 allow macloader sysfs_wifi:file rw_file_perms;
 
 set_prop(macloader, vendor_wifi_prop)
+
+# Samsung sets a misspelled, unused property (vnedor.wiff.*)
+dontaudit macloader default_prop:property_service set;

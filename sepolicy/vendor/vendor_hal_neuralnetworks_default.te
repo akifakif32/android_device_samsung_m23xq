@@ -1,0 +1,2 @@
+# The NN HAL probes a core property it doesn't need
+dontaudit vendor_hal_neuralnetworks_default default_prop:file r_file_perms;
