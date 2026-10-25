@@ -113,6 +113,7 @@ on late-fs
 on post-fs-data
 
 on boot
+    chown system radio /sys/class/sec/switch/afc_disable
     # PCIe
     chown radio system /sys/class/sec/pcie-wifi/pcie_l1ss_ctrl
 

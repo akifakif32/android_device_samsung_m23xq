@@ -32,8 +32,3 @@ if [ "$baseband" = "mdm" ] || [ "$baseband" = "mdm2" ]; then
 	start vendor.mdm_helper
 fi
 
-# This is for dummy modem. If so, to avoid mdm boot fail crash. 
-modem_bin='/vendor/firmware-modem/image'
-if [ ! -e "$modem_bin" ]; then
-	stop vendor.mdm_helper
-fi
