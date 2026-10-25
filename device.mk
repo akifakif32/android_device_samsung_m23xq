@@ -78,7 +78,7 @@ $(call soong_config_set,libinit,vendor_init_lib,//$(LOCAL_PATH):libinit_samsung_
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio.service \
-    android.hardware.audio@7.0-impl.samsung-sm8250 \
+    android.hardware.audio@7.0-impl.samsung-sm7225 \
     android.hardware.audio.effect@7.0-impl \
     android.hardware.soundtrigger@2.3-impl \
     audio.r_submix.default \
@@ -100,6 +100,11 @@ PRODUCT_PACKAGES += \
     SamsungDAP
 
 TARGET_EXCLUDES_AUDIOFX := true
+
+PRODUCT_PACKAGES_DEBUG += \
+    tinycap \
+    tinymix \
+    tinyplay
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/configs/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml \

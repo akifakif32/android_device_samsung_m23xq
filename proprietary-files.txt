@@ -13,7 +13,6 @@ vendor/etc/audconf/OPEN/workspaceFile.qwsp
 
 # ADSP
 vendor/bin/adsprpcd
-vendor/etc/init/vendor.qti.adsprpc-service.rc
 vendor/lib64/libadsp_default_listener.so
 vendor/lib64/libadsprpc.so
 vendor/lib64/libmdsprpc.so
