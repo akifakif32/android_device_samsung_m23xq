@@ -163,6 +163,9 @@ endif
 DEVICE_MATRIX_FILE := hardware/qcom-caf/common/compatibility_matrix.xml
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/manifest.xml
 
+# Lights
+$(call soong_config_set,samsungVars,target_specific_header_path,$(DEVICE_PATH)/include)
+
 # Media
 TARGET_USES_ION := true
 
