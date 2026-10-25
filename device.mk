@@ -318,6 +318,19 @@ PRODUCT_PACKAGES += \
     sehradiomanager
 endif
 
+# RIL - IMS
+ifneq ($(TARGET_IS_WIFI-ONLY),true)
+$(call inherit-product, packages/modules/ImsMedia/imsmedia.mk)
+$(call inherit-product, packages/apps/CarrierSettings/carrier_settings.mk)
+
+PRODUCT_PACKAGES += \
+    CarrierConfigOverlay \
+    ImsStack \
+    ImsStackOverlay \
+    Iwlan \
+    QualifiedNetworksService
+endif
+
 # Sensors
 PRODUCT_PACKAGES += \
     android.hardware.sensors-service.samsung-multihal
