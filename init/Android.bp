@@ -45,6 +45,13 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
+    name: "init.samsung.usb.rc",
+    src: "init.samsung.usb.rc",
+    sub_dir: "init/hw",
+    soc_specific: true,
+}
+
+prebuilt_etc {
     name: "init.qcom.recovery.rc",
     src: "init.qcom.recovery.rc",
     sub_dir: "init",
