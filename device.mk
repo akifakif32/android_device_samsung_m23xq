@@ -101,6 +101,10 @@ PRODUCT_PACKAGES += \
 
 TARGET_EXCLUDES_AUDIOFX := true
 
+# Audio - Speaker limiter
+PRODUCT_PACKAGES += \
+    SpeakerLimiter
+
 PRODUCT_PACKAGES_DEBUG += \
     tinycap \
     tinymix \
