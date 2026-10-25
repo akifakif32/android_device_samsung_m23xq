@@ -548,7 +548,7 @@
 
     </CamcorderProfiles>
 
-        <!-- Back 2 Camera -->
+    <!-- Rear wide Camera -->
     <CamcorderProfiles cameraId="2">
 
     <EncoderProfile quality="low" fileFormat="3gp" duration="30">
@@ -566,9 +566,9 @@
 
     <EncoderProfile quality="high" fileFormat="mp4" duration="30">
       <Video codec="h264"
-             bitRate="48000000"
-             width="3840"
-             height="2160"
+             bitRate="17000000"
+             width="1920"
+             height="1080"
              frameRate="30" />
 
       <Audio codec="aac"
@@ -661,15 +661,15 @@
 
     <EncoderProfile quality="timelapsehigh" fileFormat="mp4" duration="30">
       <Video codec="h264"
-             bitRate="48000000"
-             width="3840"
-             height="2160"
+             bitRate="17000000"
+             width="1920"
+             height="1080"
              frameRate="30" />
 
-      <!--
-            The Audio part of the profile will not be used since time lapse mode
-            does not capture audio
-      -->
+       <!--
+             The Audio part of the profile will not be used since time lapse mode
+             does not capture audio
+       -->
       <Audio codec="aac"
              bitRate="256000"
              sampleRate="48000"
@@ -683,10 +683,10 @@
              height="144"
              frameRate="30" />
 
-      <!--
-            The Audio part of the profile will not be used since time lapse mode
-            does not capture audio
-      -->
+       <!--
+             The Audio part of the profile will not be used since time lapse mode
+             does not capture audio
+       -->
       <Audio codec="amrnb"
              bitRate="12200"
              sampleRate="8000"
@@ -701,9 +701,9 @@
              frameRate="30" />
 
       <!--
-            The Audio part of the profile will not be used since time lapse mode
-            does not capture audio
-      -->
+             The Audio part of the profile will not be used since time lapse mode
+             does not capture audio
+       -->
       <Audio codec="aac"
              bitRate="128000"
              sampleRate="48000"
@@ -734,10 +734,10 @@
              height="720"
              frameRate="30" />
 
-      <!--
-            The Audio part of the profile will not be used since time lapse mode
-            does not capture audio
-      -->
+       <!--
+             The Audio part of the profile will not be used since time lapse mode
+             does not capture audio
+       -->
       <Audio codec="aac"
              bitRate="256000"
              sampleRate="48000"
@@ -751,10 +751,10 @@
              height="1080"
              frameRate="30" />
 
-      <!--
-            The Audio part of the profile will not be used since time lapse mode
-            does not capture audio
-      -->
+       <!--
+             The Audio part of the profile will not be used since time lapse mode
+             does not capture audio
+       -->
       <Audio codec="aac"
              bitRate="256000"
              sampleRate="48000"
@@ -768,7 +768,7 @@
 
     </CamcorderProfiles>
 
-    <!-- Front Camera - Wide Angle -->
+    <!-- Front Wide Angle Camera -->
     <CamcorderProfiles cameraId="3">
 
     <EncoderProfile quality="low" fileFormat="3gp" duration="30">
@@ -987,7 +987,7 @@
     <ImageDecoding memCap="20000000" />
 
     </CamcorderProfiles>
-    
+
     <EncoderOutputFileFormat name="3gp" />
     <EncoderOutputFileFormat name="mp4" />
 
@@ -1000,7 +1000,7 @@
         minBitRate="64000" maxBitRate="50000000"
         minFrameWidth="176" maxFrameWidth="3840"
         minFrameHeight="144" maxFrameHeight="2160"
-        minFrameRate="1" maxFrameRate="60" />
+        minFrameRate="1" maxFrameRate="30" />
 
     <VideoEncoderCap name="h263" enabled="true"
         minBitRate="64000" maxBitRate="2000000"
@@ -1015,10 +1015,10 @@
         minFrameRate="1" maxFrameRate="30" />
 
     <VideoEncoderCap name="hevc" enabled="true"
-        minBitRate="64000" maxBitRate="50000000"
+        minBitRate="64000" maxBitRate="35000000"
         minFrameWidth="176" maxFrameWidth="3840"
         minFrameHeight="144" maxFrameHeight="2160"
-        minFrameRate="1" maxFrameRate="60" />
+        minFrameRate="1" maxFrameRate="30" />
 
     <AudioEncoderCap name="aac" enabled="true"
         minBitRate="8192" maxBitRate="256000"
