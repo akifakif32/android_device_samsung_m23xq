@@ -62,7 +62,10 @@ blob_fixups: blob_fixups_user_type = {
     'vendor/lib64/nfc_nci_nxpsn.so': blob_fixup()
         .add_needed('libbase_shim.so'),
     ('vendor/lib64/libsec-ril.so', 'vendor/lib64/libsec-ril-impl.so'): blob_fixup()
-        .binary_regex_replace(b'ril.dds.call.ongoing', b'vendor.calls.slot_id'),
+        .binary_regex_replace(b'ril.dds.call.ongoing', b'vendor.calls.slot_id')
+        # Undo the stale OnGetSmscAddressDone patch (mov x3, x20 -> eor) that
+        # corrupts the response and makes GET_SMSC_ADDRESS return empty
+        .sig_replace('60 0E 40 F9 E1 03 15 AA 82 0C 80 52 30 08 0D D2', '60 0E 40 F9 E1 03 15 AA 82 0C 80 52 E3 03 14 AA'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
