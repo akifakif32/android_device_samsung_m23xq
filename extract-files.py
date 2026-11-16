@@ -65,7 +65,10 @@ blob_fixups: blob_fixups_user_type = {
         .binary_regex_replace(b'ril.dds.call.ongoing', b'vendor.calls.slot_id')
         # Undo the stale OnGetSmscAddressDone patch (mov x3, x20 -> eor) that
         # corrupts the response and makes GET_SMSC_ADDRESS return empty
-        .sig_replace('60 0E 40 F9 E1 03 15 AA 82 0C 80 52 30 08 0D D2', '60 0E 40 F9 E1 03 15 AA 82 0C 80 52 E3 03 14 AA'),
+        .sig_replace('60 0E 40 F9 E1 03 15 AA 82 0C 80 52 30 08 0D D2', '60 0E 40 F9 E1 03 15 AA 82 0C 80 52 E3 03 14 AA')
+        # Always emit uiccApplicationsEnablementChanged
+        .sig_replace('88 58 9D 52 1F 00 08 6B AB 01 00 54', '88 58 9D 52 1F 00 08 6B 1F 20 03 D5')
+        .sig_replace('88 58 9D 52 FF 02 08 6B AB 01 00 54', '88 58 9D 52 FF 02 08 6B 1F 20 03 D5'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
